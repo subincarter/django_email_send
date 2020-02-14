@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for email in emails %}
+
+       <td> {{email.subject}}</td><br>
+    {{email.image}}<br>
+<img src="{{email.image.url}}" width="100px" height="60px">
+    {% endfor %}
+
+</body>
+</html>

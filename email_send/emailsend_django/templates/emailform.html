@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+<table>
+
+    {% for forms in form %}
+    <tr> <td> {{forms.label_tag}}</td>
+       <td> {{forms}}</td>
+        </tr>
+    {% endfor %}
+</table>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
